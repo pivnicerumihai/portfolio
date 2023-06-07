@@ -1,0 +1,38 @@
+.nav_button {
+    
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    color: #80b5ba;
+}
+
+.nav_button:before, .nav_button:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform .7s;
+}
+
+.nav_button:before {
+    content: attr(data-text);
+    color: black;
+}
+
+.nav_button:after {
+    content: attr(data-replace);
+    color: #80b5ba;
+    background-color: #181f24;
+    transform: translate3d(0,-100% , 0);
+}
+
+.nav_button:hover:before,
+.nav_button:focus:before {
+    transform: translate3d(0, 0, 0);
+}
+
+.nav_button:hover:after,
+.nav_button:focus:after {
+    transform: translate3d(0, 60%, 0);
+}

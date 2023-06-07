@@ -1,0 +1,12 @@
+.skewedButton {
+    transform: skewX(-20deg);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .unskew {
+    display: inline-block;
+    transform: skewX(20deg);
+  }
+  
