@@ -1,0 +1,21 @@
+.skewedButton {
+  transform: skewX(-10deg);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; 
+  transition: all 0.3s ease; 
+}
+
+.unskew {
+  display: inline-block;
+  transform: skewX(5deg);
+}
+
+
+.skewedButton:hover {
+  margin-left:6.5rem;
+  transform: skewX(-2deg);
+}
+
+

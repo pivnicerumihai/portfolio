@@ -1,0 +1,6 @@
+.skewedSection {  transform: skewY(2deg);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; 
+    transition: all 0.3s ease; }
