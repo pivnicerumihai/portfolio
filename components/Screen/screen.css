@@ -62,13 +62,13 @@
 
 .screen-typing-effect {
     overflow: hidden;
-    animation: fadeIn 2.5s steps(45, end);
+    animation: fadeIn 1.5s steps(45, end);
     letter-spacing: .25em;
 }
 
 .screen-typing-effect-2 {
     overflow: hidden;
-    animation: fadeIn 3.5s steps(25, end);
+    animation: fadeIn 2s steps(25, end);
     letter-spacing: .25em;
 }
 

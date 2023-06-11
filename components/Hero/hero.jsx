@@ -16,11 +16,10 @@ export default function Hero() {
   }
   return (
     <Tilt 
-      className="w-full h-[80vh] bg-center bg-cover"
-      style={{ backgroundImage: `url(/images/home.png)` }}
+      className="w-full h-[100vh] bg-center bg-cover"
+      style={{ backgroundImage: `url(/images/home-2.png)` }}
       tiltMaxAngleX={1}
-      tiltMaxAngleY={0}
-      scale={1.02}
+      tiltMaxAngleY={.5}
     >
 
       <div className='flex flex-row h-[100%]'>
@@ -44,7 +43,10 @@ export default function Hero() {
           <SideButton onChangeScreen={()=>changeScreen('contact')} buttonName={"Contact"} />
         </div>
       </div>
+      <div className="screen items-center flex flex-col align-center justify-center w-[57%] 2xl:mt-[8%] xl:mt-[15%] 2xl:h-[65%]  xl:h-[48%]">
+
       {screenName === 'Initial' ? <Screen screenName={screenName} /> : screenName === 'aboutme' ? <AboutMe/> : screenName === 'skills' ? <Skills/> : <Contact/>}
+      </div>
       </div>
     </Tilt>
   );

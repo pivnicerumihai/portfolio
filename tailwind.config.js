@@ -18,7 +18,8 @@ module.exports = {
       'secondary': '#B6F7F8',
       'secondary-transparent': 'rgba(128, 181, 186, 0.2)',
       'secondary-transparent-2': 'rgba(128, 181, 186, 1)',
-      'secondary-transparent-hover': 'rgba(128, 181, 186, 0.3)'
+      'secondary-transparent-hover': 'rgba(128, 181, 186, 0.3)',
+      'white': '#ffffff',
     },
     screens: {
       'sm': '640px',
