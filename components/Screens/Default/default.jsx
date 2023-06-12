@@ -1,6 +1,6 @@
-import './screen.css'
+import './default.css'
 
-export default function Screen({screenName}) {
+export default function Default() {
     return(
         <div className="items-center flex flex-col align-center justify-center w-[54%] 2xl:mt-[8%] xl:mt-[11%] ml-[2%] 2xl:h-[65%]  xl:h-[58%]">
             

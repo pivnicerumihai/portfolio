@@ -2,7 +2,7 @@ import ScreenButton from '@/components/ScreenButton/ScreenButton';
 export default function Skills() {
   return (
   
-    <div className="items-center text-center flex flex-col align-center justify-center px-3 ">
+ 
         <div style={{
         backgroundImage: `url(/images/skills.png)`,
         backgroundPosition: "center",
@@ -12,9 +12,9 @@ export default function Skills() {
         height: "100%", 
         zIndex: 1,
       }}>
-
-      <p className="text-white text-2xl font-sans screen-typing-effect">
-        <b>Skills</b>
+   <div className="flex flex-col justify-between items-center h-full px-5">
+      <p className="text-white text-2xl font-sans screen-typing-effect  mt-10">
+        Skills
       </p>
       
       <br />
@@ -30,7 +30,7 @@ export default function Skills() {
         comprehensive skills page.
       </p>
       <br/>
-      <div className='mt-5'>
+      <div className='mb-10'>
       <ScreenButton buttonName={"Skills & Technologies"} />
       </div>
     </div>

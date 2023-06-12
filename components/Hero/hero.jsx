@@ -1,25 +1,29 @@
 'use client'
 import React,{useState} from "react";
 import SideButton from "../SideButton/sideButton";
-import Screen from '../Screen/screen'
+import Screen from '../Screens/Default/default'
 import "./hero.css";
 import AboutMe from "../Screens/AboutMe/aboutMe";
 import Skills from "../Screens/Skills/skills";
 import Contact from "../Screens/Contact/contact";
 import Tilt from 'react-parallax-tilt';
+import { CSSTransition, SwitchTransition } from "react-transition-group";
+import Default from "../Screens/Default/default";
 
 export default function Hero() {
-  const [screenName,setScreenName] = useState('Initial')
+  const [screenName,setScreenName] = useState('default')
 
   const changeScreen = (screenName) => { 
     setScreenName(screenName)
   }
   return (
     <Tilt 
-      className="w-full h-[100vh] bg-center bg-cover"
+      className="w-full h-[90vh] bg-center bg-cover"
       style={{ backgroundImage: `url(/images/home-2.png)` }}
       tiltMaxAngleX={1}
-      tiltMaxAngleY={.5}
+      tiltMaxAngleY={0}
+      tiltReverse={true}
+      scale={1.02}
     >
 
       <div className='flex flex-row h-[100%]'>
@@ -44,9 +48,24 @@ export default function Hero() {
         </div>
       </div>
       <div className="screen items-center flex flex-col align-center justify-center w-[57%] 2xl:mt-[8%] xl:mt-[15%] 2xl:h-[65%]  xl:h-[48%]">
-
-      {screenName === 'Initial' ? <Screen screenName={screenName} /> : screenName === 'aboutme' ? <AboutMe/> : screenName === 'skills' ? <Skills/> : <Contact/>}
-      </div>
+    <SwitchTransition>
+        <CSSTransition 
+            key={screenName} 
+            addEndListener={(node, done) => {
+                node.addEventListener("transitionend", done, false);
+            }}
+            classNames='fade'
+        >
+            <>
+            {screenName === 'default' && <Default />}
+            {screenName === 'aboutme' && <AboutMe />}
+            {screenName === 'skills' && <Skills />}
+            {screenName === 'contact' && <Contact />}
+            {screenName === 'contact_form' && <ContactForm />}
+            </>
+        </CSSTransition>
+    </SwitchTransition>
+</div>
       </div>
     </Tilt>
   );

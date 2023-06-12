@@ -6,7 +6,29 @@
     transition: all 0.3s ease; }
 
     .screen{
-        border: 3px solid rgba(182, 247, 248,0.2);
-        background-color:rgba(118, 220, 222, 0.4) ;
-        transform: skewY(1deg);
+        background-color:rgba(23,47,76, 0.6) ;
+
     }
+
+    .fade-enter {
+        opacity: 0;
+        transform: translateX(-50%);
+      }
+      
+      .fade-enter-active {
+        opacity: 1;
+        transform: translateX(0);
+        transition: opacity 200ms, transform 500ms;
+      }
+      
+      .fade-exit {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      
+      .fade-exit-active {
+        opacity: 0;
+        transform: translateX(5%);
+        transition: opacity 200ms, transform 500ms;
+      }
+      
