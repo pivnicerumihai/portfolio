@@ -5,7 +5,7 @@
     border-radius: 80%;
     background-color: #8AEAEC;
     pointer-events: none;
-    mix-blend-mode: difference; /* to make the dots visible on any background */
+    mix-blend-mode: difference; 
     z-index: 9999;
     opacity: 1;
     transition: opacity 13s ease-in-out;

@@ -7,7 +7,7 @@ export default function AboutMe() {
         Meet The Developer
       </p>
 
-      <p className="text-white text-center text-md font-sans screen-typing-effect-2">
+      <p className="text-white text-center text-md font-sans screen-typing-effect-2 xl:text-lg">
         Hello, I'm Mihai, a committed web developer with a passion for front-end
         development. I pride myself on my problem-solving skills, dedication to
         meeting deadlines, and ability to deliver under pressure.

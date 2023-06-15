@@ -9,6 +9,7 @@ import Contact from "../Screens/Contact/contact";
 import Tilt from 'react-parallax-tilt';
 import { CSSTransition, SwitchTransition } from "react-transition-group";
 import Default from "../Screens/Default/default";
+import ContactForm from "../Screens/ContactForm/contactForm";
 
 export default function Hero() {
   const [screenName,setScreenName] = useState('default')
@@ -56,13 +57,13 @@ export default function Hero() {
             }}
             classNames='fade'
         >
-            <>
+            <div className='w-full flex items-center justify-center text-center h-[100%] neon-text'>
             {screenName === 'default' && <Default />}
             {screenName === 'aboutme' && <AboutMe />}
             {screenName === 'skills' && <Skills />}
-            {screenName === 'contact' && <Contact />}
+            {screenName === 'contact' && <Contact openContactForm={()=>changeScreen('contact_form')}/>}
             {screenName === 'contact_form' && <ContactForm />}
-            </>
+            </div>
         </CSSTransition>
     </SwitchTransition>
 </div>

@@ -18,7 +18,7 @@ export default function Skills() {
       </p>
       
       <br />
-      <p className='text-white text-sm font-sans screen-typing-effect'>
+      <p className='text-white text-lg font-sans screen-typing-effect'>
         Bridging creativity with code, I specialize as a <b>Web Developer</b> and <b>UI
         Tester</b>, building immersive digital experiences that solve real-world
         problems. My toolkit is brimming with JavaScript, ReactJS, Tailwind CSS

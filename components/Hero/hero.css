@@ -32,3 +32,14 @@
         transition: opacity 200ms, transform 500ms;
       }
       
+      .neon-text {
+        text-shadow:
+        0 0 1px #7be8f9,
+        0 0 1px #7be8f9,
+        0 0 1.5px #7be8f9,
+        0 0 1px #7be8f9,
+        0 0 1px #7be8f9,
+        0 0 1px #7be8f9;
+        color: #fff;
+        
+    }
